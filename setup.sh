@@ -1,6 +1,8 @@
 #!/bin/bash
 
-sudo apt-get install -y bash-completion ack-grep
+sudo apt-get install -y bash-completion ack-grep tmux byobu
+
+byobu enable
 
 git config --global core.editor "code --wait"
 
