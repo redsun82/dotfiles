@@ -29,9 +29,5 @@ alias .......='cd ../../../../../..'
 alias -- -='cd -'
 
 unset SSH_KEY
-
-if [[ -z "$BYOBU_TTY" ]]; then
-  exec byobu
-fi
 EOF
 
