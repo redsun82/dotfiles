@@ -13,6 +13,7 @@ git config --global alias.hist "log --oneline --decorate"
 git config --global alias.amend "commit --amend"
 
 if [[ -n "$SSH_KEY" ]]; then
+  mkdir -p ~/.ssh
   echo $SSH_KEY > ~/.ssh/id_ed25519
   chmod go-rw ~/.ssh/id_ed25519
 fi
@@ -28,5 +29,9 @@ alias .......='cd ../../../../../..'
 alias -- -='cd -'
 
 unset SSH_KEY
+
+if [[ -z "$BYOBU_TTY" ]]; then
+  exec byobu
+fi
 EOF
 
