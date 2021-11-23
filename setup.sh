@@ -22,5 +22,8 @@ alias ......='cd ../../../../..'
 alias .......='cd ../../../../../..'
 alias -- -='cd -'
 
+if [[ -d /workspaces/semmle-code ]]; then
+  export PATH=$PATH:/workspaces/semmle-code/target/intree/codeql
+fi
 EOF
 
