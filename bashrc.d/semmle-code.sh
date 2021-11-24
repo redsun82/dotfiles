@@ -1,11 +1,3 @@
-alias ..='cd ..'
-alias ...='cd ../..'
-alias ....='cd ../../..'
-alias .....='cd ../../../..'
-alias ......='cd ../../../../..'
-alias .......='cd ../../../../../..'
-alias -- -='cd -'
-
 semmle_top=/workspaces/semmle-code
 if [[ -d $semmle_top ]]; then
   export PATH=$PATH:$semmle_top/target/intree/codeql

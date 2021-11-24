@@ -1,4 +1,8 @@
 sed -ni '/^# dotfiles/,$!p' ~/.bashrc
 echo "# dotfiles" >> ~/.bashrc
 
-cat bashrc >> ~/.bashrc
+for s in bashrc.d/*.sh; do
+  echo >> ~/.bashrc
+  echo "# $s" >> ~/.bashrc
+  cat $s >> ~/.bashrc
+done
