@@ -1,4 +1,4 @@
-vs_codeql=/home/codespace/.vscode-remote/data/User/globalStorage/github.vscode-codeql/distribution?/codeql
+vs_codeql=$(echo /home/codespace/.vscode-remote/data/User/globalStorage/github.vscode-codeql/distribution?/codeql)
 if [[ -d $vs_codeql ]]; then
   export PATH=$PATH:$vs_codeql
 fi
