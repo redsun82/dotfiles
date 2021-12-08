@@ -1,3 +1,7 @@
+vs_codeql=/home/codespace/.vscode-remote/data/User/globalStorage/github.vscode-codeql/distribution?/codeql
+if [[ -d $vs_codeql ]]; then
+  export PATH=$PATH:$vs_codeql
+fi
 semmle_top=/workspaces/semmle-code
 if [[ -d $semmle_top ]]; then
   export PATH=$PATH:$semmle_top/target/intree/codeql
