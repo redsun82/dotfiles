@@ -14,19 +14,12 @@ function align_with_truncation() {
     fi
 }
 
-function interpret_result() {
-    local res=$1
-    local ok=$2
-    local nok=$3
-    if [[ $res == "0" ]]; then
-      echo -e '\033[01;32m'$ok'\033[00m'
-    else
-      echo -e '\033[01;31m'$nok'\033[00m'
-    fi
-}
-
 export PS1='\
 $(export RES=$?; echo -n "\[\033[01;34m\]"; \
 align_with_truncation $(dirs +0); \
 echo -n "\[\033[00m\] "; \
-interpret_result $RES \$ \$) '
+if [[ $RES == "0" ]]; then \
+  echo -ne "\[\033[01;32m\]\$\[\033[00m\]"; \
+else \
+  echo -ne "\[\033[01;31m\]\$\[\033[00m\]"; \
+fi) '
