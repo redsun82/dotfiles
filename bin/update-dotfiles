@@ -1,0 +1,7 @@
+#!/bin/bash -e
+
+dotfiles=$(dirname $(dirname $(realpath $0)))
+
+cd $dotfiles
+git pull
+./setup.sh
