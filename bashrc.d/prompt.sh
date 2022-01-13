@@ -16,7 +16,7 @@ function align_with_truncation() {
 
 export PS1='\
 $(export RES=$?; echo -n "\[\033[01;34m\]"; \
-align_with_truncation $(dirs +0); \
+align_with_truncation "$(dirs +0)"; \
 echo -n "\[\033[00m\] "; \
 if [[ $RES == "0" ]]; then \
   echo -ne "\[\033[01;32m\]\$\[\033[00m\]"; \
