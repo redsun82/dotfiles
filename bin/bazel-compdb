@@ -1,4 +1,0 @@
-#!/bin/bash
-
-export BAZEL_COMPDB_BAZEL_PATH=bazelisk
-exec $(dirname $0)/bazel-compilation-database-0.5.2/generate.py "$@"
