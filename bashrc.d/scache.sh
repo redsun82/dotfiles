@@ -1,0 +1,2 @@
+export SCCACHE_CACHE_SIZE="50G"
+
