@@ -1,9 +1,12 @@
 git config --global core.editor "code --wait"
 
 # git aliases
-git config --global alias.st status
-git config --global alias.cp cherry-pick
-git config --global alias.hist "log --oneline --decorate"
-git config --global alias.amend "commit --amend"
-git config --global alias.ch checkout
-git config --global alias.su "submodule update --init --recursive"
+git config --global alias.gconf "config --global"
+git gconf alias.st status
+git gconf alias.cp cherry-pick
+git gconf alias.hist "log --oneline --decorate"
+git gconf alias.amend "commit --amend"
+git gconf alias.ch checkout
+git gconf alias.su "submodule update --init --recursive"
+git gconf alias.sw switch
+git gconf alias.br branch
