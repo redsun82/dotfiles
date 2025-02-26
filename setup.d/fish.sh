@@ -8,3 +8,6 @@ cp -fTr fish "$CONFIG"
 if [[ -n "$EXISTING_USER_PATHS" ]]; then
   echo "$EXISTING_USER_PATHS" >> "$CONFIG/fish_variables"
 fi
+
+fish -c "fish_add_path bin"
+
