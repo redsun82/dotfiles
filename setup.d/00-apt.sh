@@ -1,1 +1,1 @@
-sudo apt-get install -y bash-completion ack-grep tmux
+sudo apt-get install -y bash-completion ack-grep tmux fish
