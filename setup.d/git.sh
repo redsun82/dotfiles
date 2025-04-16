@@ -10,3 +10,5 @@ git gconf alias.ch checkout
 git gconf alias.su "submodule update --init --recursive"
 git gconf alias.sw switch
 git gconf alias.br branch
+git gcong push.autoSetupRemote true
+
